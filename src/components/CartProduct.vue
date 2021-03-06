@@ -29,10 +29,8 @@ export default {
         if(val > this.product.stock){
           this.product.count = this.product.stock
         }else if(val === this.product.stock){
-          console.log('this.isCountMax = true')
           this.isCountMax = true
         }else if(this.isCountMax){
-          console.log('this.isCountMax = false')
           this.isCountMax = false
         }
       }
